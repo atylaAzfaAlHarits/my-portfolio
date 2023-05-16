@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section::before{
+    background: linear-gradient(to top, #1c0522, transparent)
+}
+
+
