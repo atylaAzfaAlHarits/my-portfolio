@@ -1,5 +1,5 @@
 let stars = document.getElementById('stars');
-let moon = document.getElementById('moon');
+let moon = document.getElementById('moons');
 let mountains_behind = document.getElementById('mountains_behind');
 let text = document.getElementById('text');
 let btn = document.getElementById('btn');
@@ -28,6 +28,43 @@ window.addEventListener('scroll', function() {
 
   if (opacity >= 0) {
     figure.style.opacity = opacity;
+  }
+});
+
+// dark mode
+const html = document.querySelector('html');
+const moons = document.querySelector('#moon')
+const sunny = document.querySelector('#sun');
+moons.addEventListener('click', function(){
+  if(moons.checked){
+    html.classList.add('dark');
+    localStorage.theme = 'dark';
+    sunny.classList.remove('sunny');
+    mountains_behind.classList.remove('mountains_behind');
+    mountains_front.classList.remove('mountains_front');
+  }else{
+    html.classList.remove('dark');
+    localStorage.theme = 'light';
+    sunny.classList.add('sunny');
+    mountains_behind.classList.add('mountains_behind');
+    mountains_front.classList.add('mountains_front');
+  }
+});
+
+window.addEventListener('load', function() {
+  const theme = localStorage.theme;
+  if (theme === 'dark') {
+    html.classList.add('dark');
+    moons.checked = true;
+    sunny.classList.remove('sunny');
+    mountains_behind.classList.remove('mountains_behind');
+    mountains_front.classList.remove('mountains_front');
+  } else {
+    html.classList.remove('dark');
+    moons.checked = false;
+    sunny.classList.add('sunny');
+    mountains_behind.classList.add('mountains_behind');
+    mountains_front.classList.add('mountains_front');
   }
 });
 

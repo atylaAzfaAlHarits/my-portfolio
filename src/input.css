@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.sunny{
+    @apply absolute inset-0 pointer-events-none ;
+    background: linear-gradient(180deg, #fce043 0%, #fb7ba2 74%);
+    transition: all 0.3s ease;
+}
+
+section::before{
+    background: linear-gradient(to top, #1c0522, transparent)
+}
+
+.mountains_behind{
+	mix-blend-mode: difference;
+}
+.mountains_front{
+	mix-blend-mode: hard-light;
+	z-index: 10;
+}
