@@ -16,13 +16,17 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
 </head>
 
-<body class="min-h-[100vh] overflow-x-hidden select-none" style="background: linear-gradient(#2b1055, #7597de);">
+<body class="h-[4000vh] overflow-x-hidden" style="background: linear-gradient(#2b1055, #7597de);">
     <section
-        class="relative w-full h-[100vh] p-5 lg:p-[100px] flex justify-center items-center overflow-hidden before:absolute before:bottom-0 before:w-full before:h-[100px] before:z-[1000]"
-        style="content: '';">
+        class="select-none relative w-full h-[100vh] p-5 lg:p-[100px] flex justify-center items-center overflow-hidden before:absolute before:bottom-0 before:w-full before:h-[100px] before:z-[1000]"
+        style="content: '';" id="quotes-section">
         <img class="absolute top-0 left-0 w-full h-full object-cover pointer-events-none" src="dist/img/stars.png"
             id="stars">
         <div class="sun" id="sun"></div>
@@ -35,7 +39,7 @@
             src="dist/img/mountains_behind.png" id="mountains_behind">
         <img class="absolute top-0 left-0 w-full h-full object-cover pointer-events-none z-10"
             src="dist/img/mountains_front.png" id="mountains_front">
-        <figure id="myQuotes" class="max-w-screen-sm mt-10 lg:-mt-12 mx-auto z-[1001]">
+        <figure id="myQuotes" class="max-w-screen-sm mt-3 lg:-mt-12 mx-auto z-[1001]">
             <svg class="h-8 lg:h-11 mx-auto mb-3 text-white" viewBox="0 0 24 27" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -43,7 +47,9 @@
                     fill="currentColor" />
             </svg>
             <blockquote>
-                <p class="text-sm lg:text-lg text-center font-medium lg:font-semibold text-white -mt-3 lg:mt-0 leading-5">"Landwind is just awesome. It
+                <p
+                    class="text-base lg:text-lg text-center font-medium lg:font-semibold text-white -mt-0 lg:mt-0 leading-5 select-text">
+                    "Landwind is just awesome. It
                     contains tons of predesigned components and pages starting from login screen to complex dashboard."
                 </p>
             </blockquote>
@@ -57,23 +63,182 @@
             </figcaption>
         </figure>
     </section>
-    <div class="relative px-5 pt-10" id="sec" style="background: #1c0522;">
-        <h2 class="text-[3.5em] mb-[10px] text-white">Parallax Scrolling Effects</h2>
-        <p class="text-[1.2em] text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, itaque
-            quisquam! Repudiandae ratione hic eius expedita cum sunt molestias, consectetur voluptate mollitia. Quos
-            itaque natus ut ea ducimus consequuntur illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            vel alias porro itaque doloribus rerum, cupiditate veniam exercitationem qui nobis quaerat accusantium
-            maiores libero saepe atque velit repellendus minima perferendis. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Nisi porro quaerat voluptate ullam autem eaque magni, temporibus sed deserunt similique
-            est sint possimus eos culpa facere voluptatibus maxime aperiam minima.<br><br>Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Eius, itaque quisquam! Repudiandae ratione hic eius expedita cum sunt
-            molestias, consectetur voluptate mollitia. Quos itaque natus ut ea ducimus consequuntur illo. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Earum vel alias porro itaque doloribus rerum, cupiditate veniam
-            exercitationem qui nobis quaerat accusantium maiores libero saepe atque velit repellendus minima
-            perferendis.
-        </p>
-    </div>
+    <section id="portfolio" class="h-[1000vh] px-5 lg:px-10"
+        style="background: #1c0522; background-image: url(./dist/img/stars.png);">
+        <section id="hero-section">
+            <div class="container">
+                <div class="flex flex-wrap py-20 lg:py-24 text-white" id="sec">
+                    <div class="w-full self-center lg:w-1/2">
+                        <div class="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-md inline-block mb-4">
+                            <h2 class="text-lg font-mono font-semibold py-0.5 px-2">Hi There I'm Atyla👋</h2>
+                        </div>
+                        <h1 class="text-3xl lg:text-5xl font-extrabold font-poppins">A <span
+                                class="font-extrabold font-poppins bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">Backend
+                                Engineer.</span>
+                            <p></p> I Help Startup <span
+                                class="font-extrabold font-poppins bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">Launch</span>
+                            And <span
+                                class="font-extrabold font-poppins bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">Grow</span>
+                            Their
+                            Products
+                        </h1>
+                        <div class="mt-5 text-base font-[600]">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum, eligendi, sint
+                                accusamus
+                                quasi voluptatibus id placeat quibusdam nemo earum magnam eaque.</p>
+                            <div class="mt-7">
+                                <a href="">
+                                    <button
+                                        class="py-2 px-4 bg-gradient-to-r from-indigo-500 to-pink-500 hover:from-pink-500 hover:to-indigo-500 rounded-lg mr-2"><i
+                                            class="fas fa-book"></i> Download CV</button>
+                                </a>
+                                <a href="">
+                                    <button
+                                        class="py-2 px-4 bg-gradient-to-r from-indigo-500 to-pink-500 hover:from-pink-500 hover:to-indigo-500 rounded-lg"><i
+                                            class="fab fa-github"></i> My
+                                        Github</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full self-end lg:w-1/2 hidden lg:block">
+                        <div class="relative lg:right-0 mt-10 lg:mt-9">
+                            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#6366f1"
+                                            d="M31.4,-56C41.9,-48.3,52.4,-42.3,63.8,-33.3C75.2,-24.2,87.5,-12.1,88,0.3C88.4,12.6,77.1,25.3,67,36.7C56.9,48,48.2,58.1,37.2,67.2C26.3,76.2,13.1,84.2,0.8,82.8C-11.5,81.3,-23,70.5,-36.8,63.1C-50.6,55.8,-66.9,51.9,-76.5,41.9C-86.2,32,-89.4,16,-84.6,2.8C-79.8,-10.5,-67.1,-20.9,-58.7,-33.1C-50.3,-45.2,-46.2,-59.1,-37.1,-67.6C-28.1,-76.1,-14,-79.3,-1.8,-76.2C10.4,-73.1,20.9,-63.6,31.4,-56Z"
+                                            transform="translate(100 100) scale(1.1)" />
+                                    </svg>
+                                </svg>
+                            </span>
+                            <img src="https://ouch-cdn2.icons8.com/VQAsluXecxfiJExmOty1FxMDEpz8LkVz3TiK8vOX4Bg/rs:fit:256:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzMx/L2Y0NGU0M2JjLWIz/NjQtNDQ2MS1hOGQ1/LTYyNmFhNzViMmNm/OS5wbmc.png"
+                                class="mx-auto max-w-full lg:w-[320px] brightness-110 z-10" alt="" srcset="">
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="" id="about-section">
+            <div class="container">
+                <div class="flex flex-wrap py-20 lg:py-3 text-white">
+                    <div class="w-full self-start lg:w-1/2 hidden lg:block">
+                        <div class="relative lg:right-0 mt-10 lg:mt-16">
+                            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#6366f1"
+                                            d="M58.3,-60.6C69.9,-46.7,69.8,-23.3,66.6,-3.2C63.4,17,57.2,34,45.6,47.5C34,61.1,17,71.2,-1.1,72.2C-19.1,73.3,-38.2,65.3,-54.3,51.8C-70.3,38.2,-83.3,19.1,-82.5,0.8C-81.7,-17.6,-67.2,-35.2,-51.2,-49.1C-35.2,-63.1,-17.6,-73.5,2.9,-76.3C23.3,-79.2,46.7,-74.6,58.3,-60.6Z"
+                                            transform="translate(100 100) scale(1.1)" />
+                                    </svg>
+                                </svg>
+                            </span>
+                            <img src="https://ouch-cdn2.icons8.com/HirOFbcNUhvnBLLXPyg8sSukbtw4IN5T9b0bS6B9ZXg/rs:fit:256:212/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzA3/LzM4YzFjNzk0LWE2/MDUtNDI0OC05YmJl/LWM2NjU1ZWRlMzkx/MS5wbmc.png"
+                                class="mx-auto max-w-full lg:w-[450px] brightness-110 z-10" alt="" srcset="">
+
+                        </div>
+                    </div>
+                    <div class="w-full self-center lg:w-1/2">
+                        <h1 class="text-3xl lg:text-5xl font-extrabold font-poppins">About<span
+                                class="font-extrabold font-poppins bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+                                Me</span>
+                            <p>
+                        </h1>
+                        <div class="mt-5 font-[600]">
+                            <p class="mb-4">
+                                Halo👋, saya Atyla A. Al Harits, saya adalah lulusan SMK jurusan RPL (Rekayasa Perangkat
+                                Lunak). Saya sangat
+                                tertarik pada dunia teknologi dan ingin memulai karir di bidang <span
+                                    class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-[600] font-poppins">Software
+                                    Enginner</span>
+                                dibagian <span
+                                    class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-[600] font-poppins">backend</span>.
+                                Saat belajar di SMK, saya telah mempelajari
+                                bahasa pemrograman seperti <span
+                                    class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-[600] font-poppins">JavaScript</span>
+                                dan <span
+                                    class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent font-[600] font-poppins">PHP</span>.
+                            </p>
+                            <p>
+                                Sekarang, saya sedang mencari kesempatan untuk bekerja atau magang di bidang teknologi
+                                untuk memperluas pengetahuan saya dan mengembangkan keterampilan saya dalam lingkungan
+                                kerja yang sesuai.
+                            </p>
+                            <div class="mt-4">
+                                <h6 class="mb-2">FOLLOW US</h6>
+                                <div class="flex gap-2">
+                                    <a href=""
+                                        class="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full hover:from-pink-500 hover:to-indigo-500">
+                                        <button class="flex justify-center items-center h-10 w-10 ">
+                                            <i class="fab fa-instagram text-2xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href=""
+                                        class="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full hover:from-pink-500 hover:to-indigo-500">
+                                        <button class="flex justify-center items-center h-10 w-10 ">
+                                            <i class="fab fa-twitter text-2xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href=""
+                                        class="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full hover:from-pink-500 hover:to-indigo-500">
+                                        <button class="flex justify-center items-center h-10 w-10 ">
+                                            <i class="fab fa-linkedin-in text-2xl"></i>
+                                        </button>
+                                    </a>
+                                    <a href=""
+                                        class="bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full hover:from-pink-500 hover:to-indigo-500">
+                                        <button class="flex justify-center items-center h-10 w-10 ">
+                                            <i class="fab fa-tiktok text-2xl"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="skill-section">
+            <div class="flex justify-center">
+                <div class="mt-20">
+                    <h1 class="text-3xl lg:text-5xl font-extrabold font-poppins text-white"><span
+                            class="font-extrabold font-poppins bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">My</span>
+                        Skills</h1>
+                </div>
+            </div>
+            <div class="flex justify-center text-center mx-60 text-white mt-5 mb-10 font-[600] ">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cupiditate porro nam exercitationem iusto amet vero atque quidem doloremque ea!</p>
+            </div>
+            <div class="flex justify-center gap-10">
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-red-100 to-pink-400 bg-opacity-20 relative elements">
+                <img src="./dist/img/laravel.png" alt="" srcset="" class="w-12">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-slate-100 to-sky-400 bg-opacity-20 relative elements top-40">
+                <img src="./dist/img/tailwindcss.png" alt="" srcset="" class="w-12">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-violet-200 to-violet-700 bg-opacity-20 relative elements">
+                <img src="./dist/img/bootstrap.png" alt="" srcset="" class="w-12">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-yellow-100 to-amber-400 bg-opacity-20 relative elements top-40">
+                <img src="./dist/img/javascript.png" alt="" srcset="" class="w-12 rounded-md outline outline-1 outline-yellow-400">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-purple-300 to-purple-900 bg-opacity-20 relative elements">
+                <img src="./dist/img/php.png" alt="" srcset="" class="w-12">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-orange-100 to-orange-500 bg-opacity-20 relative elements top-40">
+                <img src="./dist/img/html.png" alt="" srcset="" class="w-12">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-blue-100 to-blue-800 bg-opacity-20 relative elements">
+                <img src="./dist/img/css.png" alt="" srcset="" class="w-12">
+            </div>
+            <div class="flex justify-center items-center w-20 h-20  rounded-full  bg-gradient-to-br from-blue-100 to-amber-500 bg-opacity-20 relative elements top-40">
+                <img src="./dist/img/mysql.png" alt="" srcset="" class="w-12">
+            </div>
+        </div>
+        </section>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 
