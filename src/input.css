@@ -43,4 +43,13 @@ section::before {
       transform: translateY(0);
     }
   }
+
+  @keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -100vh -110vh;
+    }
+}
   
