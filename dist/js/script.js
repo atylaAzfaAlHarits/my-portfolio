@@ -19,16 +19,13 @@ window.addEventListener('scroll', function(){
 });
 
 const figure = document.getElementById('myQuotes');
-
+    
 window.addEventListener('scroll', function() {
-  const scrollTop = window.pageYOffset;
-  const mountainTop = mountains_front.offsetTop;
-
-  const opacity = 1 - (scrollTop - mountainTop) / 20;
-
-  if (opacity >= 0) {
-    figure.style.opacity = opacity;
-  }
+    if (window.scrollY === 0) {
+        figure.style.display = "block";
+    } else {
+        figure.style.display = "none";
+    }
 });
 
 // dark mode

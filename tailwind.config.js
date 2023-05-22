@@ -14,6 +14,9 @@ module.exports = {
         },
       },
       animation: ['hover', 'focus', 'group-hover'],
+      backgroundColor: {
+        'dark': '#1c0522',
+      }
     },
   },
   plugins: [],
